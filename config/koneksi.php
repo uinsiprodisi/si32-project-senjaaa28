@@ -1,13 +1,13 @@
 <?php
 
-$servername = "lokalhost";
-$database = "uinsi_nim";
+$servername = "localhost";
+$database = "uinsi32";
 $username = "root";
 $password = "";
 
 // buat koneksi database
 
-$conn = mysql_connect($servername,$database,$username,$password);
+$conn = mysqli_connect($servername, $username, $password, $database);
 
 // cek koneksi
 
@@ -15,6 +15,4 @@ if (!$conn) {
     die("koneksi gagal".mysql_connect_error());
 }
 
-echo "koneksi berhasil!";
-//mysql_close();
 ?>
